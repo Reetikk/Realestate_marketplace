@@ -1,0 +1,32 @@
+
+
+
+
+
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "client": {
+      "root": "Real_Estate_MarketPlace_SD1/client",
+      "framework": "vite"
+    },
+    "server": {
+      "root": "Real_Estate_MarketPlace_SD1/server",
+      "framework": "express"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": {
+        "service": "server"
+      }
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "client"
+      }
+    }
+  ]
+}

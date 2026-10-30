@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #1e2a24;
+  background: #f7f7f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --ink: #1e2a24;
+  --muted: #68756d;
+  --green: #183d31;
+  --green-dark: #102b22;
+  --green-soft: #e8f0eb;
+  --gold: #c7904a;
+  --paper: #f7f7f2;
+  --surface: #ffffff;
+  --line: #e5e9e3;
+  --shadow-sm: 0 8px 24px rgba(29, 49, 39, .07);
+  --shadow-lg: 0 24px 70px rgba(21, 41, 31, .13);
+  --radius: 18px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { scroll-behavior: smooth; }
+body { min-width: 320px; min-height: 100vh; background: var(--paper); color: var(--ink); line-height: 1.6; }
+body, button, input, select, textarea { font-family: 'DM Sans', sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Manrope', sans-serif; color: var(--ink); line-height: 1.2; letter-spacing: -.035em; }
+p { color: var(--muted); }
+a { color: inherit; }
+button { font: inherit; }
+button, [role='button'] { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid rgba(199, 144, 74, .65); outline-offset: 3px; }
+img { max-width: 100%; }
+::selection { color: white; background: var(--green); }
+
+/* Shared controls keep every route in the same visual language. */
+button, input[type='submit'], input[type='button'] {
+  border: 0; border-radius: 10px; background: var(--green); color: #fff;
+  padding: 11px 18px; font-weight: 700; cursor: pointer;
+  transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+}
+button:hover, input[type='submit']:hover, input[type='button']:hover { background: var(--green-dark); transform: translateY(-1px); box-shadow: 0 8px 18px rgba(24,61,49,.18); }
+button:disabled { opacity: .55; cursor: not-allowed; transform: none; }
+input:not([type='checkbox']):not([type='radio']):not([type='file']), select, textarea {
+  max-width: 100%; border: 1px solid #dce3dc; border-radius: 10px; background: #fff;
+  color: var(--ink); padding: 12px 14px; transition: border .2s ease, box-shadow .2s ease;
+}
+input:focus, select:focus, textarea:focus { border-color: #739582; outline: none; box-shadow: 0 0 0 4px rgba(46,105,79,.1); }
+input::placeholder, textarea::placeholder { color: #9aa59d; }
+label { color: #435249; font-weight: 600; }
+hr { border: 0; border-top: 1px solid var(--line); }
+
+/* Shared cards, panels and admin/dashboard tables. */
+[class*='card'], [class*='Card'], [class*='panel'], [class*='Panel'] { transition: box-shadow .2s ease, transform .2s ease; }
+table { border-collapse: collapse; width: 100%; }
+th { color: #53635a; font-size: .78rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+th, td { padding: 14px 16px; border-bottom: 1px solid var(--line); text-align: left; }
+tbody tr:hover { background: #f6f8f5; }
+
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }

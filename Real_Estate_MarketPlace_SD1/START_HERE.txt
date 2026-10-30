@@ -1,0 +1,12 @@
+REAL ESTATE MARKETPLACE — QUICK START
+
+1) Install Node.js LTS and make sure MongoDB is running / create MongoDB Atlas database.
+2) Open server folder in terminal: npm install
+3) Copy .env.example to .env in server, set MONGO_URI and a strong JWT_SECRET.
+4) Run: npm run dev
+5) Open another terminal in client: npm install
+6) The client/.env file is preconfigured with VITE_BASE_URL=http://localhost:5001.
+7) Run: npm run dev
+8) Open the Vite local URL. API health: http://localhost:5001/api/health
+
+Do not share .env files. Cloudinary is needed for image uploads; payment/maps/email need their own credentials. Read README.md for details.

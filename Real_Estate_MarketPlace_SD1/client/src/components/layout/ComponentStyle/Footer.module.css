@@ -1,0 +1,19 @@
+.layout { background: #142f25; color: #f4f5ef; padding: 54px 24px 20px; width: 100%; }
+.content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start; padding: 0 12px; flex-wrap: wrap; gap: 36px; }
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo img { width: 48px; height: 48px; object-fit: contain; }
+.logo h3 { margin: 0; color: #f5f5ef; font-size: 15px; line-height: 1.15; }
+.logo h3 + h3 { color: #d5a15e !important; }
+.section p { margin-top: 14px; color: #b7c4ba; font-size: .92rem; }
+.links { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.links a { color: #dce5dd; text-decoration: none; transition: color .2s ease; }
+.links a:hover, .socials a:hover { color: #e3b46f; }
+.contact h4 { color: #fff; font-size: 16px; }
+.contactItem { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+.contactItem p { color: #b7c4ba; font-size: .9rem; }
+.icon { color: #d5a15e; }
+.socials { display: flex; align-items: center; gap: 14px; margin-top: 16px; }
+.socials a { color: #f4f5ef; transition: color .2s ease; }
+.bottom { max-width: 1200px; margin: 40px auto 0; padding-top: 18px; border-top: 1px solid #315044; text-align: center; font-size: .8rem; color: #a8b7ac; }
+.bottom p { color: inherit; }
+@media (max-width: 600px) { .content { flex-direction: column; align-items: center; text-align: center; } .links { align-items: center; } .contactItem, .socials { justify-content: center; } }

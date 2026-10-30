@@ -1,0 +1,4 @@
+.App { display: flex; flex-direction: column; min-height: 100vh; }
+.App > main { flex: 1; width: 100%; }
+.App > header { position: relative; z-index: 20; }
+.App > footer { margin-top: auto; }

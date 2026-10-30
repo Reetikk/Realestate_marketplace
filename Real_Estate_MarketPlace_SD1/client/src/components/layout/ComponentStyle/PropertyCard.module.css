@@ -1,0 +1,14 @@
+.card { position: relative; overflow: hidden; display: flex; flex-direction: column; width: 100%; max-width: 360px; background: #fff; border: 1px solid #e7ebe6; border-radius: 16px; box-shadow: 0 8px 24px rgba(29,49,39,.07); transition: transform .2s ease, box-shadow .2s ease; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 18px 38px rgba(29,49,39,.13); }
+.lottiewrapper { position: absolute; inset: 0; display: flex; justify-content: center; align-items: center; z-index: 10; pointer-events: none; }
+.bookmarkWrapper { position: absolute; top: 12px; left: 12px; z-index: 10; display: flex; padding: 8px; border-radius: 50%; background: rgba(255,255,255,.94); box-shadow: 0 3px 12px rgba(0,0,0,.12); cursor: pointer; transition: transform .2s ease; }
+.bookmarkWrapper:hover { transform: scale(1.08); }
+.image { display: block; width: 100%; height: 220px; object-fit: cover; }
+.content { display: flex; flex: 1; flex-direction: column; gap: 7px; padding: 18px; }
+.title { margin: 0; color: #1e2a24; font: 700 1.08rem 'Manrope', sans-serif; }
+.price { margin: 0; color: #216047; font: 700 1.1rem 'DM Sans', sans-serif; }
+.address { margin: 0; color: #68756d; font-size: .9rem; }
+.details { margin: 8px 0 0; color: #849087; font-size: .82rem; line-height: 1.5; }
+.typeBadge { display: inline-block; width: fit-content; margin-top: 4px; padding: 4px 9px; border-radius: 999px; background: #e8f0eb; color: #24563e; font-size: .74rem; font-weight: 700; }
+.btn { width: 100%; padding: 11px; border: 0; border-radius: 9px; background: #183d31; color: white; cursor: pointer; }
+.btn:hover { background: #102b22; }
